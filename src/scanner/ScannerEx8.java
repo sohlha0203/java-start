@@ -1,0 +1,43 @@
+package scanner;
+
+import java.util.Scanner;
+
+public class ScannerEx8 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int i = 0;
+		int count = 0;
+		int sum =0;
+		int numbers = 0;
+		
+		System.out.println("숫자를 입력하세요. 입력을 중단하려면 -1을 입력하세요:");
+//		while (true) {
+//			numbers = sc.nextInt();
+//			
+//			if(numbers == -1) {
+//				break;
+//			}  
+//			count++; //count 계산과 sum 계산을 if문 아래에 둬야 -1이 count와 sum에 포함X
+//			sum += numbers; //-1 받으면 break하기 때문에 count와 sum까지 안 내려옴.
+//			} 
+		
+		//영한쌤 추가 풀이 !!!!! 대박. 이러면 break 쓸 필요도 없다.
+		while ((numbers = sc.nextInt()) != -1) {
+			sum += numbers;
+			count++;
+		}
+		
+		double avg = (double) sum /count;
+		System.out.println("입력한 숫자들의 합계: " + sum);
+		System.out.println("입력한 숫자들의 평균: " + avg);
+	}
+			}
+		
+		
+	
+
+		
+
+
+

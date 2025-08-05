@@ -1,0 +1,36 @@
+package scanner;
+
+import java.util.Scanner;
+
+public class ScannerEx8 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[] {};
+		int i = 0;
+		int sum =0;
+		double avg = (double) sum / arr.length;
+		
+		System.out.println("숫자를 입력하세요. 입력을 중단하려면 -1을 입력하세요:");
+		while (true) {
+			int numbers = sc.nextInt();
+			for(i=0; i<arr.length; i++) {
+				arr[i] = numbers;
+				sum += arr[i];
+			}
+			
+		if(numbers == -1) {
+				
+			System.out.println("입력한 숫자들의 합계: " + sum);
+			System.out.println("입력한 숫자들의 평균: " + avg);
+			
+			}
+					
+			
+		}
+		
+	}
+}
+		
+
+
+
