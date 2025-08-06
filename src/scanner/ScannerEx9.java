@@ -20,19 +20,20 @@ public class ScannerEx9 {
 			int quantity = sc.nextInt();
 			int total = price * quantity;
 			finalTotal += total;
-			System.out.print("상품명:" + name + "가격:" + price + "수량:" + "합계:" + total);
+			System.out.println("상품명:" + name + " 가격:" + price + " 수량:" + " 합계:" + total);
 			
 		} else if (option == 2) {
 			System.out.println("총 비용: " +finalTotal);
 			
 		} else if (option== 3) {
 			System.out.println("프로그램을 종료합니다.");
+			break;
 		} else {
 			System.out.println("올바른 옵션을 선택해주세요.");
 		}
 		
 		}
-		
+
 		
 		
 	}
